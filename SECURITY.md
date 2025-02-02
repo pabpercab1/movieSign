@@ -12,7 +12,7 @@
 If you discover a security vulnerability within this project, please follow these steps:
 
 1. **Do not** open a public issue.
-2. Send an email to [pabpercab1@alum.us.es] with the details of the vulnerability.
+2. Send an email to pabpercab1@alum.us.es with the details of the vulnerability.
 3. Include the following information:
    - A description of the vulnerability.
    - Steps to reproduce the vulnerability.
