@@ -8,6 +8,10 @@ MovieSign is a Django-based web application that allows users to view and manage
 - Real-time updates for screening statuses
 - Responsive design using Tailwind CSS
 
+<img height="250" alt="Screenshot 2025-02-02 at 14 11 25" src="https://github.com/user-attachments/assets/51bd7614-118c-470e-b602-9ab0f200fb9d" /><img height="250" alt="Screenshot 2025-02-02 at 14 12 08" src="https://github.com/user-attachments/assets/fd31d889-05c0-4639-baad-61d25e8d9c87" />
+
+
+
 ## Requirements
 - Python 3.8+
 - Django 5.1
