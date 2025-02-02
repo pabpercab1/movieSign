@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="container mx-auto p-8">
+        <h1 class="text-4xl font-bold mb-6 text-center">Cinemas</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {% for cinema in cinemas %}
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition">
+                    <a href="{% url 'details' cinema.id %}" class="block text-center mb-4">
+                        <!-- Cinema Logo -->
+                        <img src="{{ cinema.logo.url }}" alt="{{ cinema.name }} logo" class="w-24 mx-auto rounded-lg shadow-lg">
+                        <!-- Cinema Name -->
+                        <p class="text-2xl font-semibold text-yellow-400 mt-4">{{ cinema.name }}</p>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
