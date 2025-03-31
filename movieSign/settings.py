@@ -48,11 +48,13 @@ INSTALLED_APPS = [
 
 ASGI_APPLICATION = 'movieSign.asgi.application'
 
+REDIS_HOST = os.getenv("REDIS_HOST", "localhost")
+
 CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
-            "hosts": [('127.0.0.1', 6379)],  # Make sure Redis is running locally or configure accordingly
+            "hosts": [(REDIS_HOST, 6379)],  # Make sure Redis is running locally or configure accordingly
         },
     },
 }

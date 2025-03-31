@@ -9,7 +9,7 @@ MovieSign is a Django-based web application that allows users to view and manage
 - Responsive design using Tailwind CSS
 
 ## Requirements
-- Python 3.8+
+- Python 3.11+
 - Django 5.1
 - Redis server
 
